@@ -1,6 +1,7 @@
 body {
     background-color: black;
     color: antiquewhite;
+    padding-bottom:60px;   /* Height of the footer */
 }
 .wip{
     color: red;
@@ -13,5 +14,10 @@ body {
 }
 
 footer{
+    padding-top: 100px;
     justify-content: center;
-}
+        position:relative;
+        bottom: 0px;
+        width:100%;
+        height: 60px;;   /* Height of the footer */
+     }
