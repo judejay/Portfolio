@@ -1,13 +1,14 @@
 body {
-  background-color: black;
+  background-color: #353935;
   color: antiquewhite;
   padding-bottom: 60px; /* Height of the footer */
 }
 .wip {
-  color: red;
+  color: #ff4500;
 }
 a {
   text-decoration: none;
+  color: #7b68ee;
 }
 
 .flex-container {
@@ -15,6 +16,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 footer {
