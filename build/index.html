@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Judetec Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+    <header class="sticky top-0 z-10 mb-6 bg-teal-700 text-white">
+      <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
+        <h1 class="text-3xl font-medium">
+          <a href="#overview">Portfolio</a>
+        </h1>
+        <div>
+          <button
+            id="hamburger-button"
+            class="relative h-8 w-8 cursor-pointer text-3xl md:hidden"
+          >
+            <div
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
+            ></div>
+          </button>
+          <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+            <a href="#apps" class="hover:opacity-90">Apps</a>
+            <a href="#footer" class="hover:opacity-90">Technologies</a>
+          </nav>
+        </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="absolute top-0 hidden w-full origin-top animate-open-menu flex-col justify-center bg-black text-5xl"
+      >
+        <button class="self-end px-6 text-8xl">&times;</button>
+        <nav
+          class="flex min-h-screen flex-col items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#apps" class="w-full py-6 text-center hover:opacity-90"
+            >Apps</a
+          >
+          <a href="#footer" class="w-full py-6 text-center hover:opacity-90"
+            >Technologies</a
+          >
+        </nav>
+      </section>
+    </header>
+    <main class="mx-auto max-w-4xl">
+      <section id="overview"
+        class="flex-col-reveres flex items-center justify-center gap-8 p-6 sm:flex-row"
+      >
+        <article class="sm:w-1/2">
+          <h2 
+            class="sm:text-5sl max-w-md text-center text-3xl font-bold text-slate-900 dark:text-white sm:text-left"
+          >
+            Judetec Web Apps
+          </h2>
+        </article>
+      </section>
+      <section
+        id="apps"
+        class="flex-col-reveres flex items-center justify-center gap-8 p-6 sm:flex-row"
+      >
+        <div
+          class="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl"
+        >
+          <div class="md:flex">
+            <div class="md:shrink-0">
+              <img
+                class="h-80 w-full object-cover md:h-full md:w-80"
+                src="./public/afr.PNG"
+                alt="Air fryer recipes"
+              />
+            </div>
+            <div class="p-8">
+              <div
+                class="text-sm font-semibold uppercase tracking-wide text-indigo-500"
+              >
+                Air Fryer Recipes<sup>New</sup>
+              </div>
+              <a
+                target="_blank"
+                href="https://incandescent-conkies-24d5f7.netlify.app/"
+                class="mt-1 block text-lg font-medium leading-tight text-black hover:underline"
+                >Live data from recipes API
+              </a>
+              <p>
+                React web app written in typescript. Bootstrap styling gives
+                responsive layout. RTK Query utilzied to fetch data.
+              </p>
+              <p class="mt-2 text-slate-500">
+                Toggle buttons used to fetch a random selection of 20 recipes
+                from an ever-growing database of recipes. Clicking on suggestion
+                opens a modal displaying ingredients for the recipe. Save the
+                recipe to favourites and visit the original website's full
+                methodology for it's creation. Save the links to local storage,
+                remove when done.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="flex-col-reveres mb-12 flex items-center justify-center gap-8 p-6 sm:flex-row"
+      >
+        <div
+          class="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl"
+        >
+          <div class="md:flex">
+            <div class="md:shrink-0">
+              <img
+                class="h-80 w-full object-cover md:h-full md:w-80"
+                src="./public/weather.PNG"
+                alt="Weather App "
+              />
+            </div>
+            <div class="p-8">
+              <div
+                class="text-sm font-semibold uppercase tracking-wide text-indigo-500"
+              >
+                Weather app
+              </div>
+              <a
+                target="_blank"
+                href="https://clever-boyd-3f6704.netlify.app"
+                class="mt-1 block text-lg font-medium leading-tight text-black hover:underline"
+                >Live data from weather API
+              </a>
+              <p>
+                Angular web app written in typescript. In-built angular
+                components provide all functionality
+              </p>
+              <p class="mt-2 text-slate-500">
+                Search location weather data by name from hundreds of thousands
+                of place names in the world. Relevent current data is retrieved
+                for live API. page updates to represent current conditions
+                including day or night, sunrise, sunset etc. Available in three
+                languages, English, Spanish & Dutch.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="technologies" class="mb-12 grid grid-cols-4 gap-4">
+        <div>
+          <img src="./public/ts2.png" alt="typescript" />
+        </div>
+
+        <div>
+          <img src="./public/js.jpg" alt="js" />
+        </div>
+
+        <div>
+          <img src="./public/css3.png" alt="css3" />
+        </div>
+
+        <div>
+          <img src="./public/html5.png" alt="html5" />
+        </div>
+
+        <div>
+          <img src="./public/angular.png" alt="angular" />
+        </div>
+
+        <div>
+          <img src="./public/react.png" alt="react" />
+        </div>
+
+        <div>
+          <img src="./public/node.jpg" alt="nodejs" />
+        </div>
+        <div>
+          <img src="./public/rest.png" alt="rest" />
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer id="footer"></footer>
+</html>
